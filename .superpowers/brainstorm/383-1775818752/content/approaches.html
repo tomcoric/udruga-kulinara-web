@@ -1,0 +1,44 @@
+<h2>Kako implementirati stranicu?</h2>
+<p class="subtitle">Isti dizajn, različita tehnička rješenja — odaberi što ti odgovara</p>
+
+<div class="options">
+
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Jedna HTML datoteka (sve u jednom)</h3>
+      <p>HTML + CSS + JS sve u jednoj datoteci <code>index.html</code>. Otvoriš u browseru — odmah radi. Najlakše za pregledavati i dijeliti. Idealno ako je ovo prototip ili prezentacija klijentu.</p>
+      <div class="pros-cons" style="margin-top:10px;">
+        <div class="pros"><h4>Za</h4><ul><li>Jedan klik za otvaranje</li><li>Nema dependency-ja</li><li>Lako poslati mailom/ZIP-om</li></ul></div>
+        <div class="cons"><h4>Protiv</h4><ul><li>Teže održavati ako postane veliko</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>HTML + CSS + JS (odvojene datoteke)</h3>
+      <p>Standardna web struktura: <code>index.html</code>, <code>style.css</code>, <code>main.js</code>. Čistije za razvoj, lakše za kasniju integraciju u WordPress kao child theme.</p>
+      <div class="pros-cons" style="margin-top:10px;">
+        <div class="pros"><h4>Za</h4><ul><li>Čišći kod, lakše uređivanje</li><li>Spreman za WordPress integraciju</li><li>Standardna praksa</li></ul></div>
+        <div class="cons"><h4>Protiv</h4><ul><li>Potreban lokalni server za pregled (Live Server u VSCode)</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>WordPress page template (PHP)</h3>
+      <p>Direktno kao WordPress <code>page-template.php</code> s inline CSS-om. Možeš uploadati na server i zamijeniti trenutnu početnu stranicu bez rebuilda cijele teme.</p>
+      <div class="pros-cons" style="margin-top:10px;">
+        <div class="pros"><h4>Za</h4><ul><li>Odmah ide na WordPress</li><li>Nema potrebe za child theme</li></ul></div>
+        <div class="cons"><h4>Protiv</h4><ul><li>Potreban FTP/hosting pristup za pregled</li><li>PHP sintaksa</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p style="margin-top:20px; color:#888; font-size:13px;">💡 Preporuka: <strong>B</strong> ako planiraš integrirati u WordPress, <strong>A</strong> ako želiš brzo vidjeti rezultat odmah.</p>
