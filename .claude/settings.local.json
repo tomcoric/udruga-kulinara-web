@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:glas-slavonije.hr)",
+      "WebFetch(domain:www.vecernji.hr)",
+      "WebFetch(domain:www.viskovci.hr)"
+    ]
+  }
+}
